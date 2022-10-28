@@ -1,2 +1,8 @@
-# NoSql_DBs
-NoSql DataBases Study and Examples of use
+# No Sql Data Bases
+> Exploration of some types nosql dbs 
+
+### DBs Covered 
+* **Redis**
+* **MongoDB**
+* **Cassandra**
+* **Neo4j**
