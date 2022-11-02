@@ -1,0 +1,117 @@
+
+
+# Document DataBases
+ 
+        
+
+## Structure
+**Instance -> databases -> collections -> documents**
+
+#### Database
+>Set of Collections
+            
+#### Collection
+>Set of Documents, usually of a similar structure
+            
+#### Document
+> MongoDB document = one JSON object
+Internally stored as BSON
+
+Each document:
+- belongs to exactly one collection
+- has a unique identifier _id
+                     
+Ex: 
+    { 
+    _id: "1",
+    name: "Cartuxa",
+    year: 2012
+    }   
+    {
+    _id: "2", 
+    name: "Evel",
+    year: 2010
+    }  
+    {
+    _id: "3",
+    name: ”EA",
+    year: 2016
+    }
+
+
+#### Embedded Documents
+                
+> Objects inside objects 
+
+- Related data in a single structure with subdocuments
+- Suitable for one-to-one or one-to-many relationships
+- Brings ability to read / write related data in a single operation
+
+
+#### References
+                
+>Basically isntead of keeping an object inside keeps a reference(id) of the other object/s
+
+- Directed links between documents, expressed via identifiers  
+- References provide more flexibility than embedding
+                        
+
+## Characteristics
+    
++Simpler application code  
++Schema flexibility
++Better performance due to locality
+
+-If the application does use many-to-many relationships, the document model becomes less appealing (no joins).
+-The locality advantage only applies if you need large parts of the document at the same time. 
+-The database typically needs to load the entire document, even if you access only a small portion of it, which can be wasteful on large documents
+
+
+# MongoDB: Document DataBase
+
+  $mongo -> start console
+
+  Useful commands:
+
+> show dbs                &emsp;->  show all dbs 
+  db                      &emsp;&emsp;&emsp;&emsp;-> show current db in use 
+  use <db>                &emsp;-> change current db in use 
+  show collections        &emsp;&emsp;-> show all collections of the current db  
+  db.<db>.drop()        &emsp;-> Deletes collection "phones" 
+  db.<db>.count() &emsp; &emsp;-> number of elements in restaurants
+
+  
+#### basic insert
+>db.weaponds.insertMany([{  
+      name: sword,
+      base_damage: 10,
+      atk_speed: 6, 
+      hitbox: {
+        shape: square,
+        lenght: 30,
+        width: 30
+      } 
+    },
+    {  
+      name: spear,
+      base_damage: 6,
+      atk_speed: 8,
+      hitbox: {
+        shape: square,
+        lenght: 80,
+        width: 30
+      } 
+    },
+    {  
+      name: halberd,
+      base_damage: 8,
+      atk_speed: 10,
+      hitbox: {
+        shape: cicle,
+        lenght: 30,
+        width: 70
+      } 
+    }])
+    
+    
+     
