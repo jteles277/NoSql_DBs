@@ -1,0 +1,34 @@
+# Redis
+
+Simple Commands:
+
+    redis-server            -> Inicialize server 
+    redis-cli               -> Inicialize client
+    redis-cli --stat        -> Show server status 
+    redis-cli --bigkeys     -> Show key numbers divided for types 
+    redis-cli --scan        -> Show all key names
+    
+Basics:
+
+    - Redis is a key-value store (just like a dic)
+
+    - Can store from Strings... to Lists and Dics 
+
+    - Redis is most used for cache (rapid access memory), for websites, apps, etc.
+
+    - Made to use in cluster mode(multiple instances running communicating betewen eachother)
+
+    - Redis interaction is limited, using simple commands(Get, Set, Del, etc...)
+
+ACL (Access control list)
+
+    Security feature that ables the creation of users with permissions and privileges
+
+Transactions  
+
+    Allow the execution of a group of commands in a single step (all or nothing), they are centered around the commands MULTI , EXEC , DISCARD and WATCH. 
+    Redis Transactions make two important guarantees: All the commands in a transaction are serialized and executed sequentially.
+
+NameSpacing
+
+    Isnt a feature in redis, but can be used by convention
