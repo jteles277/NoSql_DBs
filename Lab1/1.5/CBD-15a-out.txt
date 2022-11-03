@@ -1,0 +1,212 @@
+
+Dado o exercicio apresentado eu decidi estruturar como se fosse uma rede social muito simples
+
+Temos:
+
+    - sistema de login/register
+    - sistema de subscricao
+    - sistema de mensagem, onde o usuario pode mandar uma mensagem para o sistema
+    - sistema de "feed" onde estao presentes todas as mensagens das subscricoes e do usuario ordenadas por ordem de postagem 
+
+
+Use Example of Login:
+
+    Twitter 2
+
+    1: Login
+    2: Register
+
+
+Insert Command: 1
+Username: non_existim_user
+Password: non_existing_password
+Not in the system... try again or register
+
+    Twitter 2
+
+    1: Login
+    2: Register
+
+
+Insert Command: 2
+Create Username: teles
+Create Password: 123
+User Added
+
+
+    Twitter 2
+
+    1: See Feed
+    2: Follow User
+    3: Publish message
+    4: See all my subscriptions
+    5: Loggout
+
+
+Insert Command: 5
+Logging Out...
+
+    Twitter 2
+
+    1: Login
+    2: Register
+
+
+Insert Command: 1
+Username: teles
+Password: 1234
+Not in the system... try again or register
+
+    Twitter 2
+
+    1: Login
+    2: Register
+
+
+Insert Command: 1
+Username: teles
+Password: 123
+
+    Twitter 2
+
+    1: See Feed
+    2: Follow User
+    3: Publish message
+    4: See all my subscriptions
+    5: Loggout
+
+
+Insert Command: 3
+
+Msg: ola pessoal
+
+    Twitter 2
+
+    1: See Feed
+    2: Follow User
+    3: Publish message
+    4: See all my subscriptions
+    5: Loggout
+
+
+Insert Command: 3
+
+Msg: alguem ai?
+
+    Twitter 2
+
+    1: See Feed
+    2: Follow User
+    3: Publish message
+    4: See all my subscriptions
+    5: Loggout
+
+
+Insert Command: 1
+
+Feed
+
+teles: ola pessoal
+teles: alguem ai?
+
+    Twitter 2
+
+    1: See Feed
+    2: Follow User
+    3: Publish message
+    4: See all my subscriptions
+    5: Loggout
+
+
+Insert Command:
+
+-------------------- outro usuario
+
+
+
+    Twitter 2
+
+    1: Login
+    2: Register
+
+
+Insert Command: 2
+Create Username: user_2
+Create Password: 1234
+
+User Added
+
+
+    Twitter 2
+
+    1: See Feed
+    2: Follow User
+    3: Publish message
+    4: See all my subscriptions
+    5: Loggout
+
+
+Insert Command: 2
+
+All users:
+    user_2
+    teles
+
+Chose one to follow: teles
+
+    Twitter 2
+
+    1: See Feed
+    2: Follow User
+    3: Publish message
+    4: See all my subscriptions
+    5: Loggout
+
+
+Insert Command: 1
+
+Feed
+
+teles: ola pessoal
+teles: alguem ai?
+
+    Twitter 2
+
+    1: See Feed
+    2: Follow User
+    3: Publish message
+    4: See all my subscriptions
+    5: Loggout
+
+
+Insert Command: 3
+
+Msg: eu estou !!!
+
+    Twitter 2
+
+    1: See Feed
+    2: Follow User
+    3: Publish message
+    4: See all my subscriptions
+    5: Loggout
+
+
+Insert Command: 1
+
+Feed
+
+teles: ola pessoal
+teles: alguem ai?
+user_2: eu estou !!!
+
+    Twitter 2
+
+    1: See Feed
+    2: Follow User
+    3: Publish message
+    4: See all my subscriptions
+    5: Loggout
+
+
+Insert Command:

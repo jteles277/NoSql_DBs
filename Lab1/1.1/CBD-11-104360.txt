@@ -1,0 +1,22 @@
+set key1 value1
+get key1
+get value1
+del key1
+get key1
+add key2
+set key1 O/_\O
+get key1
+append key1 " uwu"
+get key1
+clear
+get key1
+del key1
+clear
+set key1 "O/_\O"
+get key1
+set key0 "O/_\\O"
+get key0
+de l key0
+del key0
+clear
+get key1

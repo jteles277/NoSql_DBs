@@ -1,0 +1,30 @@
+Search for ('Enter' for quit): joan
+    joan
+    joana
+    joane
+    joanie
+    joann
+    joanna
+    joanne
+    joannes
+
+Search for ('Enter' for quit): teles
+    No matches found!
+
+Search for ('Enter' for quit): fran
+    fran
+    francene
+    frances
+    francesca
+    francine
+    francisca
+    franciska
+    francoise
+    francyne
+    frank
+    frankie
+    franky
+    franni
+    frannie
+    franny
+ 

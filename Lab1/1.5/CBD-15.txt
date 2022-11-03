@@ -1,0 +1,20 @@
+Structures Used:
+
+
+    Hashs: 
+        
+        - Users -> A Hash that contains all users and the respective password 
+
+            used by the login system
+
+    Sets:   	 
+        
+        - *x*_subscriptions -> Multiple sets, each one keeps th subscriptions of *x* user  
+
+            used to manage the relationships betewn users
+ 
+    Ordered Sets: 
+        
+        - *x*_messages -> Multiple ordered set, each contains all messages published by *x* user
+
+            used to manage the messages, they are sorted by the timestamp so later they can be ordered in the feed in order of posting 

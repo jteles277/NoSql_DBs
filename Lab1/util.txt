@@ -1,0 +1,42 @@
+// 1.3    
+        private static void Manage_Set(){
+            
+            String[] users = { "Ana", "Pedro", "Maria", "Luis" };
+            // jedis.del(USERS_KEY); // remove if exists to avoid wrong type
+            for (String user : users){
+                jedis.sadd(USERS_KEY, user);
+            }
+
+            for(String s : jedis.smembers(USERS_KEY)){
+                System.out.println(s);
+            }    
+        }
+        private static void Manage_List(){
+        
+            String[] users = { "Ana", "Pedro", "Maria", "Luis" };
+            // jedis.del(USERS_KEY); // remove if exists to avoid wrong type
+            for (String user : users){
+                jedis.rpush("List_0", user);
+            }
+
+            for(String s : jedis.lrange("List_0", 0, users.length)){
+                System.out.println(s);
+            }    
+        }
+        private static void Manage_Map(){
+            
+            String[] users = { "Ana", "Pedro", "Maria", "Luis" };
+            // jedis.del(USERS_KEY); // remove if exists to avoid wrong type
+            int i =0;
+            for (String user : users){
+                jedis.hset("Map_0", user, String.valueOf(i));
+                i++;
+            }
+
+            
+            for(String s : jedis.hkeys("Map_0")){
+                System.out.println(s + " : " + jedis.hget("Map_0", s) );
+                
+            }    
+        }
+    //

@@ -1,0 +1,15 @@
+Search for ('Enter' for quit): Matil
+    Matilde
+    Matilda
+
+Search for ('Enter' for quit): Carol
+    Carolina
+    Carol
+    Caroline
+    Carole
+
+Search for ('Enter' for quit): Bea
+    Beatriz
+    Beatris
+    Beatrix
+    Beatrice
