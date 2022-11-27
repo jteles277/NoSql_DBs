@@ -1,0 +1,22 @@
+
+Get Docker  
+    > docker pull cassandra:latest
+
+Run Docker 
+    > docker run --name cass_cluster cassandra:latest
+
+Run Console 
+    > docker exec -it cass_cluster cqlsh
+
+
+cqlsh> clear                   -> clears console (thank god finally)
+
+cqlsh> describe keyspaces      -> list keyspaces
+
+cqlsh> use <keyspace>          -> use <keyspace>
+
+cqlsh> describe tables         -> list tables
+
+cqlsh> Create Table();         -> create table just like sql
+
+cqlsh> describe <table>        -> show <table> info 
